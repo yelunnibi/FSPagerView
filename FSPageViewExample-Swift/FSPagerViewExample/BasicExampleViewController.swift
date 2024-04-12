@@ -21,6 +21,7 @@ class BasicExampleViewController: UIViewController,UITableViewDataSource,UITable
         didSet {
             self.pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
             self.pagerView.itemSize = FSPagerView.automaticSize
+            self.pagerView.numberOfItems = 0
         }
     }
     
